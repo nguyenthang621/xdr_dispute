@@ -1,0 +1,22 @@
+from django.db import models
+
+class DisputeHistory(models.Model):
+    uid = models.IntegerField()
+    client_account = models.CharField(max_length=200)
+    subscriber_host=models.CharField(null=True,max_length=20)
+    subscriber_id=models.CharField(null=True,max_length=100)
+    client_id = models.IntegerField(null=True)
+    account_id = models.IntegerField(null=True)
+    origin = models.CharField(max_length=15,default="orig")
+    start_time = models.CharField(max_length=26)
+    stop_time = models.CharField(max_length=26)
+    total = models.IntegerField(default=0)
+    no_l = models.IntegerField(default=0)
+    no_e = models.IntegerField(default=0)
+    src_number = models.IntegerField(null=True, blank=True)
+    dst_number = models.IntegerField(null=True, blank=True)
+    connect_time_offset = models.IntegerField(default=0)
+    volume_offset = models.IntegerField(default=0)
+    number_of_result = models.IntegerField(default=0)
+    ext_cdr_file = models.FileField()
+    dispute_result = models.FileField()

@@ -1,0 +1,10 @@
+Django==4.2.2
+django-ninja==0.22.2
+gunicorn
+jsonrpc-requests==0.4.0
+pandas==2.0.2
+pandasql==0.7.3
+django-cleanup==8.0.0
+django-cors-headers==4.2.0
+PyJWT==2.7.0
+pymysql

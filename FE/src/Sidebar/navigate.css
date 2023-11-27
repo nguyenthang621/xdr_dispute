@@ -1,0 +1,57 @@
+/* Use Apple's recommended font family */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+}
+
+.menu-wrapper,
+.menu-wrapper-ind {
+  background: #1d1d1f;
+}
+
+.menu-wrapper {
+  height: 100vh;
+}
+/* Style for the collapse button */
+.collapse-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px; /* Set the height to match other icons */
+  cursor: pointer;
+}
+
+.collapse-button button {
+  border: none;
+  background-color: transparent;
+  color: #ffffff; /* White text color for the button */
+  cursor: pointer;
+  font-size: 16px;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.collapse-button button:hover {
+  color: #007bff; /* Apple's primary blue color on button hover */
+}
+
+/* Style for the MenuOutlined icon */
+.anticon.anticon-menu {
+  font-size: 24px; /* Increase the font size for the Menu icon */
+}
+
+.anticon-white {
+  color: #ffffff; /* Set the icon color to white */
+}
+
+.white-text {
+  color: #ffffff; /* Set the text color to white */
+  font-size: 20px; /* Set the font size to 16px or any size you desire */
+}
+
+.menu-item {
+  margin-bottom: 8px; /* Set the margin between menu items (adjust as needed) */
+}

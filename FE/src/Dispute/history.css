@@ -1,0 +1,13 @@
+.ant-table-content {
+  max-height: 65vh;
+  /* overflow: hidden; */
+  overflow: scroll;
+  position: relative;
+}
+
+.ant-table-thead {
+  position: sticky;
+  top: 0;
+  opacity: 1;
+  z-index: 50;
+}

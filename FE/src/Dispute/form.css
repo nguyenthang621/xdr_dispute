@@ -1,0 +1,241 @@
+/* Use Apple's recommended font family */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+}
+.main-content {
+  width: 90%;
+}
+
+.ant-table-wrapper.ant-table-result {
+  width: 100%;
+}
+.required-select-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.required-select-col {
+  flex: 1;
+}
+
+.required-select-ele {
+  min-width: 10em;
+}
+
+/* form.css */
+
+.main-content-dispute-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* padding-top: 20px; */
+}
+
+/* Form wrapper */
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 800px;
+  margin-top: 20px;
+}
+
+/* Form title */
+.form-header {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.form-title {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  flex-grow: 1;
+}
+
+/* Form item label */
+.ant-form-item-label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+/* Form item input and select */
+.ant-input,
+.ant-select-selector {
+  background-color: #f1f1f1;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-size: 16px;
+  color: #333;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.custom-antd-dp {
+  padding: 8px 12px;
+  font-size: 16px;
+  color: #333;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.hide-arrows input {
+  padding: 5px 8px;
+  border: thin;
+  padding: 1px 2px;
+  font-size: 16px;
+  color: #333;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.ant-input-number {
+  font-size: 16px;
+  color: #333;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.hide-arrows .ant-input-number-handler-wrap {
+  display: none;
+}
+/* Form item input and select on focus */
+.ant-input:focus,
+.ant-select-selector:focus {
+  background-color: #fff;
+  border-color: #1890ff;
+  box-shadow: 0 0 0 2px #1890ff inset, 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Primary button */
+.ant-btn-primary {
+  background-color: #0070c9;
+  color: #fff;
+}
+
+/* Danger button */
+.ant-btn-danger {
+  background-color: #ff4d4f;
+  color: #fff;
+}
+
+/* Spacing for select dropdown menu */
+.ant-select-dropdown {
+  padding: 8px;
+}
+
+/* "Comparation options" section */
+.comparation-options {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.comparation-options-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.main-content-dispute-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* padding-top: 20px; */
+  width: 100%;
+}
+
+/* Form container */
+.form-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.form-left {
+  flex: 1;
+  margin-right: 120px;
+}
+
+/* Form right side */
+.form-right {
+  flex: 1;
+  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-submit {
+  margin-top: 250px;
+  display: flex;
+  justify-content: center;
+}
+
+.ant-table-result {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Table header style */
+.ant-table-thead > tr > th {
+  background-color: #f1f1f1;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+}
+
+/* Table cell style */
+.ant-table-tbody > tr > td {
+  text-align: center;
+  border: none;
+}
+
+.ant-tag-has-color {
+  color: #333;
+}
+
+.deleted-account {
+  text-decoration: line-through;
+}
+
+.stopped-account {
+  color: #f16f71;
+}
+
+.select-label {
+  white-space: normal;
+  word-break: break-all;
+}
+
+@media (max-width: 768px) {
+  .form-container {
+    flex-direction: column;
+  }
+
+  .form-left,
+  .form-right {
+    margin-left: 0;
+  }
+}
+
+/* Media query for larger screens */
+@media (min-width: 769px) {
+  .form-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .form-left {
+    width: 48%;
+  }
+
+  .form-right {
+    width: 48%;
+  }
+}
